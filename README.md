@@ -7,7 +7,7 @@ Falta de calidad en el código, falta de documentación, falta de pruebas y deud
     - Tiempo en refactorizar código.
     - Tiempo en comprender el código.
 
-    ![](https://github.com/Lercc/SolidCleanCode/img/esquema-deuda-tecnica.png)
+    ![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/esquema-deuda-tecnica.png)
     > Esquema de deuda técnica de Martiw Fowler
 
 - ¿Cómo se paga la deuda técnica?
