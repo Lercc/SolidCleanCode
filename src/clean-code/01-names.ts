@@ -66,6 +66,23 @@
     function createUser() {};
     function updateUser() {};
     function sendEmail() {};
+
+    /**
+     * CLASES : 
+     *      formados por sustantivos o frases de sustantivo en UpperCamelCase
+     * 
+     *      ¿Qué exactamente hace la clase?
+     *      ¿Cómo exactamente esta clase realiza cierta tarea?
+     *      ¿Hay algo específico sobre su ubicación?
+     */
+    /** BAD */
+    class Manger {};
+    class Data {};
+    class Info {};
+    class Individual {};
+    class Processor {};
+    class SpecialMonsterView {};
+    /** BETTER */
 })();
 
 
