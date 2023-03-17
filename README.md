@@ -10,9 +10,21 @@ Falta de calidad en el código, falta de documentación, falta de pruebas y deud
     > Esquema de deuda técnica de Martin  Fowler
 
 - ¿Cómo se paga la deuda técnica? : Realizando refactorización del código.
-- Refactorización : Proceso que tiene como objetivo mejorar el código sin alterar su comportamiento para que sea más entendible y tolerante a cambios. 
-- Nombres de variables : Nombres pronunciables y expresivos
 
-- Nombres para funciones
+- Refactorización : Proceso que tiene como objetivo mejorar el código sin alterar su comportamiento para que sea más entendible y tolerante a cambios. 
+
+- Variables : Nombres pronunciables y expresivos
+
+- Funciones :
+    - Simplicidad en fundamental
+    - Funciones de tamaño reducido
+    - Funciones de una sola línea sin causar complejidad (deseable)
+    - Evitar el uso del "ELSE"
+    - Prioriza el uso de la condicional ternaria
+
 - Ejercicios de refactorizacion
-- Principio DRY
+
+- Principio DRY: Don't Repeat Yourself
+    - Evitar duplicidad de código
+    - Simplifica pruebas
+    - Ayuda a centralizar procesos
