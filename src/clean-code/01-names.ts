@@ -46,6 +46,26 @@
 
     // cantidad máxima de clases por estudiante - max classes per student
     const maxClassesPerStudent = 6;
+
+    // CONTABLES - NUMÉRICOS
+    /** BAD */
+    const fruits = 3;
+    const cars = 5;
+    /** BETTER*/
+    const maxFruits = 5;
+    const minFruits = 1;
+    const totalFruits = 3;
+    const totalOfCars = 4;
+
+    // FUNCIONES
+    /** BAD */
+    function createUserIfNotExists() {};
+    function updateUserIfNotEmpty() {};
+    function sendEmailIfFieldsValid() {};
+    /** BETTER : verb + noun*/
+    function createUser() {};
+    function updateUser() {};
+    function sendEmail() {};
 })();
 
 
