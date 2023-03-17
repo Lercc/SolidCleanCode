@@ -41,12 +41,6 @@
 
 
     // EJEMPLO 2
-
-
-
-
-
-
     function sendEmail( toWhom: string ): boolean {
         // verificar correo
         if ( !toWhom.includes('@') ) return false
