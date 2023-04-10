@@ -70,3 +70,6 @@ cochera.estacionar(miAuto)
 
 ![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/herencia-composicion.png)
 > Herencia vs composición
+
+# Estructura recomendada de una clase
+![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/clase-estructura.png)
