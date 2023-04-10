@@ -32,3 +32,36 @@ Falta de calidad en el código, falta de documentación, falta de pruebas y deud
 - Herencia problemática
     - Aplicar el principio de responsabilidad única en la herencia es casi imposible de hacer porque cada una de las clases debería realizar una tarea de manera independiente es decir una única responsabilidad, pero al heredar extendiendo de otra clase, se rompe con ello.
 
+- Polimorfismo: Es la ```relajación del sistema de tipos```, de tal manera que una referencia a una clase (como  atributo, declaración de variable o parámetro) acepte tambien instancias de sus clases derivadas además de instacias de la misma clase.
+    ```
+        class Vehiculo {}
+
+        class Moto extends Vehiculo {}
+        class Bus extends Vehiculo {}
+        class Auto extends Vehiculo {}
+
+        Moto miMoto = new Moto()
+        Auto miAuto = new Auto()
+        Bus miBus = new Bus()
+
+        class cochera {
+            function  estacionar(Vehiculo miVehiculo) {...}
+        }
+
+        cochera.estacionar(miMoto)
+        cochera.estacionar(miBus)
+        cochera.estacionar(miAuto)
+    ```
+
+
+- Herencia
+    - La herencia es atractiva porque permite reutilizar código de una manera rápida y sencilla.
+    - La herencia es poderosa porque permite jugar con el polimorfismo con facilidad.
+    - La herencia me permite sobrescribir métodos.
+
+- Composición
+    - La principal ventaja que tiene trabajar con la composición es la practicidad y facilidad con la cual podemos reutilizar nuestro código siempre y cuando se encapcule adecuadamente.
+    - Además, al trabajar aplicando la letra D (inversión de dependecias) de los principios SOLID contaremos con un bajo acoplamiento en el código fuente, lo que nos permitirá disminuir el número de refactorizaciones y obtener una mayor facilidad de mantenimiento, expansión, cambiabilidad e incluso implementar la ejecución de pruebas menos complicadas
+
+![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/herencia-composicion.png)
+    > Herencia vs composición
