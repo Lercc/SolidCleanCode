@@ -28,3 +28,7 @@ Falta de calidad en el código, falta de documentación, falta de pruebas y deud
     - Evitar duplicidad de código
     - Simplifica pruebas
     - Ayuda a centralizar procesos
+
+- Herencia problemática
+    - Aplicar el principio de responsabilidad única en la herencia es casi imposible de hacer porque cada una de las clases debería realizar una tarea de manera independiente es decir una única responsabilidad, pero al heredar extendiendo de otra clase, se rompe con ello.
+

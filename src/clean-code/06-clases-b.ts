@@ -1,5 +1,6 @@
 (() => {
-    // REFACTOR of A
+    // REFACTOR of A: Pasando objetos como propiedades.
+
     // No aplicando el principio de responsabilidad unica
 
     type Gender = 'M'|'F';
