@@ -64,4 +64,4 @@ Falta de calidad en el código, falta de documentación, falta de pruebas y deud
     - Además, al trabajar aplicando la letra D (inversión de dependecias) de los principios SOLID contaremos con un bajo acoplamiento en el código fuente, lo que nos permitirá disminuir el número de refactorizaciones y obtener una mayor facilidad de mantenimiento, expansión, cambiabilidad e incluso implementar la ejecución de pruebas menos complicadas
 
 ![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/herencia-composicion.png)
-    > Herencia vs composición
+> Herencia vs composición
