@@ -1,3 +1,13 @@
+# CLEAN CODE
+
+## ÍNDICE
+1. [DEUDA TÉCNICA](#deuda-técnica)
+2. [Polimorfismo](#polimorfismo)
+2. [Herencia](#herencia)
+3. [Composición](#composición)
+3. [STUPID](#stupid)
+
+
 ## DEUDA TÉCNICA
 Falta de calidad en el código, falta de documentación, falta de pruebas y deudas de refactorización.
 
@@ -54,7 +64,6 @@ cochera.estacionar(miBus)
 cochera.estacionar(miAuto)
 ```
 
-
 # Herencia
  ```Una de las características de las herencias es que son unidireccionales y solo los subtipos de las superclases pueden comportarse igual que los tipos de quienes están heredando.``` Si bien muchas veces esto nos permite ampliar fácilmente el código y obtener extensiones independientes, otras veces genera complejidad en la elaboración del mismo.
     
@@ -73,3 +82,13 @@ cochera.estacionar(miAuto)
 
 # Estructura recomendada de una clase
 ![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/clase-estructura.png)
+# STUPID
+![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/stupid.png)
+
+### Singleton
+- Pros: Garatiza una única instancia de la clase a lo largo de toda la aplicación.
+- Contra:
+    - Vive en el contexto global.
+    - Puede ser modificado por cualquiera y en cualquier momento.
+    - No es rastreable.
+    - Díficil de testear debido a su ubicación.
