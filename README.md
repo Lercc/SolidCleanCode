@@ -100,7 +100,7 @@ cochera.estacionar(miAuto)
 ### Tight coupling
 Lo ideal es tener bajo acoplamiento y buena cohesión.
 
-![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/alto-acoplamiento.png)
+![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/acoplamiento.png)
 
 Alto acoplamiento:
 - Contras:
