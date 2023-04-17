@@ -10,6 +10,10 @@
     - [Tight coupling (alto acoplamiento)](#tight-coupling)
         - [Cohesión](#cohesión)
         - [Acoplamiento](#acoplamiento)
+    - [Untestability](#untestability)
+    - [Premature optimization](#premature-optimization)
+    - [Indescriptive Naming](#indescriptive-Naming)
+    - [Duplication](#duplication)
 
 
 ## DEUDA TÉCNICA
@@ -130,6 +134,28 @@ Evitar alto acoplamiento y baja cohesión
 ##### Buscar
 Buscar bajo acoplamiento y alta cohesión
 ![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/cohesion.png)
+
+### Untestability
+Código dificilmente testeable
+- Código con alto acoplamiento.
+- Código con muchas dependencias no inyectadas.
+- Dependencias en el contexto global(Tipo singleton).
+Debemos de tener en mente la pruebas desde la creación del código.
+### Premature optimization
+No debemos anticiparnos a los requisitos y desarrollar abstracciones innecesarias que puedan añadir complejidad accidental.
+- Complejidad accidental: Cuando implementamos una solución compleja a la mímina indispensable.
+### Indescriptive Naming
+- Nombre de variables mal nombradas.
+- Nombres de clases genéricas.
+- Nombres de funciones mal nombradas.
+- Ser muy específico o demasiado genérico.
+### Duplication
+No aplicar el principio DRY
+- Código es idéntico y cumple la misma función.
+- Un cambio implicaría actualizar todo el código idéntico en varios lugares.
+- Incrementa posibilidades de error humano al olvidar una parte para actualizar.
+
+
 
 
 
