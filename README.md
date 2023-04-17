@@ -6,6 +6,10 @@
 2. [Herencia](#herencia)
 3. [Composición](#composición)
 3. [STUPID](#stupid)
+    - [Singleton](#singleton)
+    - [Tight coupling (alto acoplamiento)](#tight-coupling)
+        - [Cohesión](#cohesión)
+        - [Acoplamiento](#acoplamiento)
 
 
 ## DEUDA TÉCNICA
@@ -92,3 +96,44 @@ cochera.estacionar(miAuto)
     - Puede ser modificado por cualquiera y en cualquier momento.
     - No es rastreable.
     - Díficil de testear debido a su ubicación.
+
+### Tight coupling
+Lo ideal es tener bajo acoplamiento y buena cohesión.
+
+![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/alto-acoplamiento.png)
+
+Alto acoplamiento:
+- Contras:
+    - Un cambio en un módulo  por lo general provoca un efecto dominó de los cambios en otros módulos.
+    - El ensamblaje de módulos puede requerir más esfuerzo y/o tiempo debido a la mayor dependencia entre módulos.
+    - Un módulo en particular puede ser más dificil de reutilizar y/o probar porque se deben incluir módulos dependientes.
+
+Ejemplo:
+- ```A``` tiene un atributo que se refiere a ```B```.
+- ```A``` llama a los servicios de un objeto ```B```.
+- ```A``` tiene un método que hace referencia a ```B```(a través del tipo de retorno o parámetro).
+- ```A``` es una subclase de/o implementa la clase ```B```.
+
+#### Cohesión
+La cohesión se refiere a lo que la clase o módulo puede hacer.
+- La baja cohesión significaría que la clase realiza una gran variedad de acciones: es amplia, no se enfoca en lo que debería hacer.
+- Alta cohesión significa que la clase se enfoca en lo que debería estar haciendo, es decir, solo métodos relacionados con la intención de la clase.
+
+#### Acoplamiento
+Se refiere a cuán relacionadas o dependientes son dos clases o módulos entre sí.
+- En `bajo acoplamiento`, cambiar algo importante en una clase no debería afectar a la otra.
+- En `alto acoplamiento`, dificultaría el cambio y el mantenimiento de su código; dado que las clases están muy unidas, hacer un cambio podría requerir una renovación completa del sistema.
+
+##### Evitar
+Evitar alto acoplamiento y baja cohesión
+![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/alto-acoplamiento.png)
+##### Buscar
+Buscar bajo acoplamiento y alta cohesión
+![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/cohesion.png)
+
+
+
+
+
+
+
