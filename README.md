@@ -5,7 +5,7 @@
 2. [Polimorfismo](#polimorfismo)
 2. [Herencia](#herencia)
 3. [Composición](#composición)
-3. [STUPID](#stupid)
+4. [STUPID](#stupid)
     - [Singleton](#singleton)
     - [Tight coupling (alto acoplamiento)](#tight-coupling)
         - [Cohesión](#cohesión)
@@ -14,6 +14,13 @@
     - [Premature optimization](#premature-optimization)
     - [Indescriptive Naming](#indescriptive-Naming)
     - [Duplication](#duplication)
+8. [SOLID](#solid)
+    - [Single Responsability SRP](#single-responsability-srp)
+    - [Open Close](#open-close)
+    - [Liskov Sustitution](#liskov-sustitution)
+    - [Interface Segregation](#interface-segregation)
+    - [Dependency Inversion](#dependency-inversion)
+
 
 
 ## DEUDA TÉCNICA
@@ -155,11 +162,24 @@ No aplicar el principio DRY
 - Un cambio implicaría actualizar todo el código idéntico en varios lugares.
 - Incrementa posibilidades de error humano al olvidar una parte para actualizar.
 
+# SOLID
+## Single Responsability SRP
+Tener una única responsabilidad no significa realizar una única cosa, sino más bien en realizar una serie de procesos estrechamente relacionados entre sí.
+## Open Close
+Establece que las entidades de sotfware debe estar abierto a la extención pero cerrado a su modificación.
+## Liskov Sustitution
+Las funciones que utilicen punteros o referencias a clases base deben ser capaces de usar objetos de clases derivadas sin saberlo.
+- Siendo `U` un subtipo de `T`, cualquier instancia de `T` debería poder ser sustituida por cualquier instancia de `U` sin alterar las propiedades del sistema.
+## Interface Segregation
+Los clientes no deberían estar obligados a depender de interfaces que no utilizen.
+## Dependency Inversion
+- Los módulos de alto nivel no deben depender de módulos de bajo nivel. 
+- Ambos deben depender de abstracciones.
+- Las abstracciones no deben depender de detalles.
+- Los detalles deben depender de abstracciones.
 
-
-
-
-
+- Los componentes más importantes son aquellos centrados en resolver el problema subyacente al negocio, es decir, la capa de dominio. Los menos importantes son los que están próximos a la infraestructura, es decir, aquellos relacionados con la UI, la persistencia, la comunicación con API's externas, etc.
+![](https://raw.githubusercontent.com/Lercc/SolidCleanCode/main/img/inversion-dependencias.png)
 
 
 
