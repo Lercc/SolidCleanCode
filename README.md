@@ -1,4 +1,4 @@
-# CLEAN CODE
+# CLEAN CODE:
 
 ## ÍNDICE
 1. [DEUDA TÉCNICA](#deuda-técnica)
